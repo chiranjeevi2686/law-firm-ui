@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Premier Law Firm Website
 
-## Getting Started
+A modern, professional law firm website built with **Next.js 16**, **Tailwind CSS v4**, and **TypeScript**.
 
-First, run the development server:
+## ✨ Features
+
+- **Static Generation (SSG)** - Ultra-fast, secure, and SEO-optimized
+- **5 Practice Areas** - Dedicated pages for each practice area
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **SEO Optimized** - Meta tags, Open Graph, Twitter Cards
+- **Netlify Forms** - Contact forms without backend
+- **Testimonials** - Display client success stories
+- **Performance Ready** - Optimized for Lighthouse scores
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Build & Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Build static site
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Deploy to Netlify
+# Connect GitHub repo → auto-deploy on push
+# Build command: npm run build
+# Publish directory: out
+```
 
-## Learn More
+## 📁 Key Files
 
-To learn more about Next.js, take a look at the following resources:
+| File | Purpose |
+|------|---------|
+| `app/page.tsx` | Homepage |
+| `app/practice-areas/` | Practice area pages |
+| `app/contact/page.tsx` | Contact form page |
+| `components/` | Reusable React components |
+| `data/` | Static content (practiceAreas, testimonials, siteConfig) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✏️ Customize Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update Firm Info
+Edit `data/siteConfig.ts`:
+```typescript
+firm: {
+  name: "Your Firm Name",
+  phone: "+1 (555) 123-4567",
+  email: "hello@yourfirm.com",
+  address: "Your Address",
+}
+```
 
-## Deploy on Vercel
+### Add Practice Areas
+Edit `data/practiceAreas.ts` - add/edit practice area objects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Add Testimonials
+Edit `data/testimonials.ts` - add client testimonials
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Colors
+Primary color is blue (`blue-600`, `blue-900`). Modify component classes to change theme.
+
+## 🌍 Deployment
+
+### Netlify (Recommended)
+1. Push code to GitHub
+2. Connect repo in Netlify
+3. Set build command: `npm run build`
+4. Set publish directory: `out`
+5. **Forms work automatically!**
+
+### Vercel
+Simply import the repository - zero configuration needed.
+
+## 📝 Contact Form
+
+Pre-configured with **Netlify Forms** - no backend needed!
+
+- Automatically detects form with `name="contact"`
+- Emails sent directly to Netlify
+- Add email notifications in Netlify dashboard
+
+## 📊 SEO
+
+All pages include:
+- ✅ Meta titles and descriptions
+- ✅ Open Graph tags
+- ✅ Twitter cards
+- ✅ Canonical URLs
+- ✅ Structured semantic HTML
+
+## 🎨 Design
+
+Built with **Tailwind CSS v4** - customize by editing:
+- Component className attributes
+- `tailwind.config.js`
+- `app/globals.css`
+
+## 📚 Documentation
+
+See [README_DEPLOYMENT.md](README_DEPLOYMENT.md) for detailed documentation covering:
+- Project structure
+- Customization options
+- Performance optimization
+- Future migration to CMS/Backend
+- Security considerations
+
+## 🔗 Useful Links
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org)
+- [Netlify Docs](https://docs.netlify.com)
+
+## 📄 License
+
+Copyright © 2024 Premier Law Firm. All rights reserved.
