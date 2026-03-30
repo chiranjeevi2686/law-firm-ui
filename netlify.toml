@@ -5,10 +5,17 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Maintenance mode redirect - ACTIVE
 [[redirects]]
-  from = "/practice-areas/*"
-  to = "/practice-areas/:splat"
-  status = 200
+  from = "/*"
+  to = "/maintenance.html"
+  status = 503
+
+# Practice areas redirect - DISABLED during maintenance
+# [[redirects]]
+#   from = "/practice-areas/*"
+#   to = "/practice-areas/:splat"
+#   status = 200
 
 [[headers]]
   for = "/*"
