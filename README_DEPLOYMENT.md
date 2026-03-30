@@ -1,4 +1,4 @@
-# Premier Law Firm - Static Web Application
+# PNC Law Associates - Static Web Application
 
 A professional, modern law firm website built with Next.js 16, Tailwind CSS v4, and TypeScript. This site is optimized for static generation (SSG) with no backend required.
 
@@ -183,7 +183,7 @@ Each page exports metadata:
 
 ```typescript
 export const metadata: Metadata = {
-  title: "Page Title | Premier Law Firm",
+  title: "Page Title | PNC Law Associates",
   description: "Page description for search results",
 };
 ```
@@ -267,7 +267,7 @@ For issues or questions:
 
 ## 📄 License
 
-Copyright © 2024 Premier Law Firm. All rights reserved.
+Copyright © 2024 PNC Law Associates. All rights reserved.
 
 ---
 

@@ -7,13 +7,13 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    author: "Sarah Johnson",
+    author: "Chiranjeevi Netyam",
     role: "CEO, Tech Startup",
-    content: "The corporate law team at Premier Law Firm guided us through our Series A funding with exceptional expertise. Highly recommended for any growing business.",
+    content: "The corporate law team at PNC Law Associates guided us through our Series A funding with exceptional expertise. Highly recommended for any growing business.",
     rating: 5,
   },
   {
-    author: "Michael Chen",
+    author: "Bhavani Kurru",
     role: "Business Owner",
     content: "Outstanding service from start to finish. They handled our property purchase smoothly and professionally. Great communication throughout the process.",
     rating: 5,
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
   {
     author: "David Thompson",
     role: "Corporate Client",
-    content: "Years of working with Premier Law Firm. Consistently excellent legal advice and quick turnaround times. They're our go-to firm for all our legal needs.",
+    content: "Years of working with PNC Law Associates. Consistently excellent legal advice and quick turnaround times. They're our go-to firm for all our legal needs.",
     rating: 5,
   },
 ];

@@ -8,8 +8,8 @@ export function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Expert Legal Solutions
           </h1>
-          <p className="text-xl sm:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Experienced attorneys providing comprehensive legal guidance for your business and personal needs.
+          <p className="text-xl sm:text-2xl mb-3 text-blue-100 max-w-3xl mx-auto">
+            Advocate Pilla Neelakanta Chakravarthy — PNC Law Associates
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

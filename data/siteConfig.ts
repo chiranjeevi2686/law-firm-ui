@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Premier Law Firm",
-  description: "Experienced legal solutions for your business and personal needs",
-  url: "https://premierlaw.com",
-  ogImage: "https://premierlaw.com/og-image.png",
+  name: "PNC Law Associates",
+  description: "Legal services by Advocate Pilla Neelakanta Chakravarthy",
+  url: "https://pnc-law-associates.example",
+  ogImage: "https://pnc-law-associates.example/og-image.png",
   
   // Navigation
   nav: [
@@ -14,11 +14,11 @@ export const siteConfig = {
 
   // Firm info
   firm: {
-    name: "Premier Law Firm",
-    tagline: "Expert Legal Solutions",
-    phone: "+1 (555) 123-4567",
-    email: "hello@premierlaw.com",
-    address: "123 Legal Street, Suite 100\nLos Angeles, CA 90001",
+    name: "PNC LAW ASSOCIATES",
+    tagline: "PILLA NEELAKANTA CHAKRAVARTHY — Legal Advocate",
+    phone: "+91 73820 41516",
+    email: "contact@pnc-law-associates.example",
+    address: "39-11-62, Industrial Estate, Sector -11, Muralinagar, Birla junction, Visakhapatnam, Andhra Pradesh 530007, India",
   },
 
   // Contact form (Netlify Forms)
@@ -29,8 +29,8 @@ export const siteConfig = {
 
   // SEO defaults
   seo: {
-    titleTemplate: "%s | Premier Law Firm",
-    defaultTitle: "Premier Law Firm - Expert Legal Solutions",
-    defaultDescription: "Premier Law Firm provides comprehensive legal services including corporate law, family law, real estate, criminal defense, and employment law.",
+    titleTemplate: "%s | PNC Law Associates",
+    defaultTitle: "PNC Law Associates - Expert Legal Solutions",
+    defaultDescription: "PNC Law Associates provides comprehensive legal services including corporate law, family law, real estate, criminal defense, and employment law.",
   },
 };

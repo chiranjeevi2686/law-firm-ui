@@ -1,4 +1,4 @@
-# Premier Law Firm Website
+# PNC Law Associates Website
 
 A modern, professional law firm website built with **Next.js 16**, **Tailwind CSS v4**, and **TypeScript**.
 
@@ -121,4 +121,4 @@ See [README_DEPLOYMENT.md](README_DEPLOYMENT.md) for detailed documentation cove
 
 ## 📄 License
 
-Copyright © 2024 Premier Law Firm. All rights reserved.
+Copyright © 2024 PNC Law Associates. All rights reserved.

@@ -3,8 +3,8 @@ import { siteConfig } from "@/data/siteConfig";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Premier Law Firm",
-  description: "Get in touch with Premier Law Firm for a free consultation",
+  title: "Contact Us | PNC Law Associates",
+  description: "Get in touch with PNC Law Associates for a free consultation",
 };
 
 export default function ContactPage() {

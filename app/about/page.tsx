@@ -3,32 +3,32 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Premier Law Firm",
-  description: "Learn about Premier Law Firm's history, mission, and experienced team of attorneys",
+  title: "About Us | PNC Law Associates",
+  description: "Learn about PNC Law Associates's history, mission, and experienced team of attorneys",
 };
 
 export default function AboutPage() {
   const team = [
     {
-      name: "John Smith",
+      name: "Name One",
       title: "Senior Founding Partner",
       specialty: "Corporate Law",
       bio: "25+ years of experience in corporate law and business transactions",
     },
     {
-      name: "Sarah Johnson",
+      name: "Name Two",
       title: "Partner",
       specialty: "Family Law",
       bio: "20+ years specializing in family law and mediation services",
     },
     {
-      name: "Michael Chen",
+      name: "Name Three",
       title: "Partner",
       specialty: "Real Estate Law",
       bio: "18+ years in residential and commercial real estate law",
     },
     {
-      name: "Amanda Rodriguez",
+      name: "Name Four",
       title: "Counsel",
       specialty: "Criminal Law",
       bio: "15+ years of criminal defense and prosecution experience",
@@ -53,8 +53,8 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              {siteConfig.firm.name} was founded in 1995 with a simple mission: to provide exceptional legal
-              representation to businesses and individuals in need. Over the past 25+ years, we've grown from a
+              {siteConfig.firm.name} was founded in 2020 with a simple mission: to provide exceptional legal
+              representation to businesses and individuals in need. Over the past years, we've grown from a
               small practice to a respected firm serving thousands of satisfied clients.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">

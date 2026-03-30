@@ -19,10 +19,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${area.title} | Premier Law Firm`,
+    title: `${area.title} | PNC Law Associates`,
     description: area.description,
     openGraph: {
-      title: `${area.title} | Premier Law Firm`,
+      title: `${area.title} | PNC Law Associates`,
       description: area.description,
     },
   };

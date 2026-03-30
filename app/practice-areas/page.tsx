@@ -3,7 +3,7 @@ import { practiceAreas } from "@/data/practiceAreas";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Practice Areas | Premier Law Firm",
+  title: "Practice Areas | PNC Law Associates",
   description: "Our comprehensive legal services across multiple practice areas",
 };
 
