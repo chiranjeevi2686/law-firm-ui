@@ -15,10 +15,10 @@ export const siteConfig = {
   // Firm info
   firm: {
     name: "PNC LAW ASSOCIATES",
-    tagline: "PILLA NEELAKANTA CHAKRAVARTHY — Legal Advocate",
+    tagline: "Advocate Pilla Neelakanta Chakravarthy — Corporate, Banking, DRT & Insolvency Specialist",
     phone: "+91 73820 41516",
-    email: "contact@pnc-law-associates.example",
-    address: "39-11-62, Industrial Estate, Sector -11, Muralinagar, Birla junction, Visakhapatnam, Andhra Pradesh 530007, India",
+    email: "pillaneelakantachakravarthy@gmail.com",
+    address: "DNO:39-11-62, SECTOR-11, MURALINAGAR, VISAKHAPATNAM, 530007",
   },
 
   // Contact form (Netlify Forms)

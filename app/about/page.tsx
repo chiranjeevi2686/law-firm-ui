@@ -10,28 +10,17 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const team = [
     {
-      name: "Name One",
-      title: "Senior Founding Partner",
-      specialty: "Corporate Law",
-      bio: "25+ years of experience in corporate law and business transactions",
-    },
-    {
-      name: "Name Two",
-      title: "Partner",
-      specialty: "Family Law",
-      bio: "20+ years specializing in family law and mediation services",
-    },
-    {
-      name: "Name Three",
-      title: "Partner",
-      specialty: "Real Estate Law",
-      bio: "18+ years in residential and commercial real estate law",
-    },
-    {
-      name: "Name Four",
-      title: "Counsel",
-      specialty: "Criminal Law",
-      bio: "15+ years of criminal defense and prosecution experience",
+      name: "Pilla Neelakanta Chakravarthy",
+      title: "Advocate / Legal Officer",
+      specialty: "Corporate, Banking, DRT, Consumer, Civil & Criminal Litigation",
+      bio: "4+ years of experience in corporate law, litigation, regulatory compliance, and debt recovery. Represented leading banks and NBFCs in DRT, SARFAESI, IBC and civil cases.",
+      core: [
+        "DRT & Banking Litigation",
+        "SARFAESI & RDDBFI Act",
+        "IBC/CIRP/Corporate Insolvency",
+        "Consumer & Civil courts",
+        "Legal drafting and opinion",
+      ],
     },
   ];
 
@@ -53,18 +42,20 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              {siteConfig.firm.name} was founded in 2020 with a simple mission: to provide exceptional legal
-              representation to businesses and individuals in need. Over the past years, we've grown from a
-              small practice to a respected firm serving thousands of satisfied clients.
+              {siteConfig.firm.name} was formed to deliver focused legal support to financial institutions,
+              corporations, and individuals. Led by Advocate Pilla Neelakanta Chakravarthy, our practice blends
+              strategic litigation, regulatory compliance, and practical transaction advisory across corporate,
+              banking, insolvency, and civil practice areas.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Our success is built on a foundation of integrity, dedication, and a genuine commitment to
-              achieving the best outcomes for our clients. We take pride in our work and maintain the highest
-              ethical standards in all our legal practice.
+              With a commitment to delivering fast, clear, and high-quality counsel, we represent lenders and
+              borrowers in DRT, SARFAESI, RDDBFI, IBC, consumer disputes and criminal cases. We use extensive
+              court experience to secure recovery, enforce rights, and resolve disputes efficiently.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Whether you're navigating a complex business transaction, dealing with a family matter, or facing
-              a legal challenge, our experienced team is here to guide you every step of the way.
+              Our client-first approach hinges on rigorous research, candid advice, and a track record of
+              successful outcomes. We strive to be trusted legal partners for all stakeholders confronting
+              legal complexities in modern commerce.
             </p>
           </div>
         </div>
@@ -77,9 +68,9 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To provide outstanding legal services with integrity, expertise, and unwavering commitment to
-                our clients' success. We strive to make complex legal matters understandable and to guide our
-                clients toward the best possible outcomes.
+                To provide practical, outcomes-oriented legal services built on deep knowledge of banking law,
+                debt recovery, and corporate restructuring. We are committed to achieving results that protect
+                client interests while ensuring regulatory compliance and process efficiency.
               </p>
             </div>
 

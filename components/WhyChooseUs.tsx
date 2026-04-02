@@ -1,8 +1,8 @@
 export function WhyChooseUs() {
   const benefits = [
     {
-      title: "20+ Years Experience",
-      description: "Two decades of proven success in diverse legal matters",
+      title: "Proven Litigation Track Record",
+      description: "Focused, specialized experience in banking, DRT, SARFAESI, civil and criminal matters",
       icon: "⭐",
     },
     {
