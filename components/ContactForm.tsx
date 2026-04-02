@@ -32,7 +32,7 @@ export function ContactForm() {
           type="text"
           name="name"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
         />
       </div>
 
@@ -45,7 +45,7 @@ export function ContactForm() {
           type="email"
           name="email"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
         />
       </div>
 
@@ -57,7 +57,7 @@ export function ContactForm() {
           id="phone"
           type="tel"
           name="phone"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
         />
       </div>
 
@@ -69,7 +69,7 @@ export function ContactForm() {
           id="service"
           name="service"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
         >
           <option value="">Select a service</option>
           <option value="corporate-law">Corporate Law</option>
@@ -77,6 +77,7 @@ export function ContactForm() {
           <option value="real-estate">Real Estate Law</option>
           <option value="criminal-law">Criminal Law</option>
           <option value="employment-law">Employment Law</option>
+          <option value="other">Other</option>
         </select>
       </div>
 
@@ -89,7 +90,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
         />
       </div>
 
