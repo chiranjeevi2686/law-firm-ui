@@ -1,6 +1,7 @@
 import { siteConfig } from "@/data/siteConfig";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { TeamMemberCard } from "@/components/TeamMemberCard";
 
 export const metadata: Metadata = {
   title: "About Us | PNC Law Associates",
@@ -115,27 +116,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold mb-12 text-gray-900">Our Team</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member) => (
-              <div key={member.name} className="bg-gray-50 p-8 rounded-lg">
-                <div className="text-center mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-yellow-600"
-                  />
-                  <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-yellow-600 font-semibold">{member.title}</p>
-                </div>
-                <p className="text-sm text-gray-600 mb-3 font-semibold">Specialty: {member.specialty}</p>
-                <p className="text-gray-700 mb-4">{member.bio}</p>
-                <ul className="space-y-2">
-                  {member.core.map((item) => (
-                    <li key={item} className="text-gray-700 flex items-start">
-                      <span className="text-yellow-600 mr-3">✓</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <TeamMemberCard key={member.name} member={member} />
             ))}
           </div>
         </div>
