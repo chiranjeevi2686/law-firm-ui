@@ -4,7 +4,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us | PNC Law Associates",
-  description: "Get in touch with PNC Law Associates for a free consultation",
+  description: "Contact Advocate Pilla Neelakanta Chakravarthy for criminal, corporate, DRT and civil litigation matters in Andhra Pradesh.",
+  keywords: [
+    "contact criminal lawyer Andhra Pradesh",
+    "corporate litigation consultation Visakhapatnam",
+    "DRT advocate contact",
+    "civil litigation lawyer Andhra Pradesh",
+  ],
 };
 
 export default function ContactPage() {

@@ -20,10 +20,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${area.title} | PNC Law Associates`,
-    description: area.description,
+    description: `${area.description}. Litigation representation in Andhra Pradesh by Advocate Pilla Neelakanta Chakravarthy.`,
+    keywords: [
+      area.title,
+      "Andhra Pradesh litigation",
+      "criminal lawyer Andhra Pradesh",
+      "corporate litigation lawyer Andhra Pradesh",
+      "Visakhapatnam advocate",
+    ],
     openGraph: {
       title: `${area.title} | PNC Law Associates`,
-      description: area.description,
+      description: `${area.description}. Litigation representation in Andhra Pradesh by Advocate Pilla Neelakanta Chakravarthy.`,
     },
   };
 }

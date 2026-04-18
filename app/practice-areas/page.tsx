@@ -4,7 +4,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Practice Areas | PNC Law Associates",
-  description: "Our comprehensive legal services across multiple practice areas",
+  description: "Explore criminal, corporate, DRT, civil, consumer and family litigation services across Andhra Pradesh.",
+  keywords: [
+    "criminal litigation Andhra Pradesh",
+    "corporate litigation Andhra Pradesh",
+    "DRT tribunal lawyer",
+    "commercial court lawyer Andhra Pradesh",
+    "consumer commission advocate",
+  ],
 };
 
 export default function PracticeAreasPage() {

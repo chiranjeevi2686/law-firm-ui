@@ -4,23 +4,32 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | PNC Law Associates",
-  description: "Learn about PNC Law Associates's history, mission, and experienced team of attorneys",
+  description: "Learn about PNC Law Associates, led by Advocate Pilla Neelakanta Chakravarthy, serving Andhra Pradesh in criminal, civil and corporate litigation",
+  keywords: [
+    "Pilla Neelakanta Chakravarthy",
+    "Advocate in Andhra Pradesh",
+    "criminal lawyer Andhra Pradesh",
+    "corporate litigation lawyer Andhra Pradesh",
+    "DRT lawyer Visakhapatnam",
+  ],
 };
 
 export default function AboutPage() {
   const team = [
     {
       name: "Pilla Neelakanta Chakravarthy",
-      title: "Advocate / Legal Officer",
-      specialty: "Corporate, Banking, DRT, Consumer, Civil & Criminal Litigation",
-      bio: "4+ years of experience in corporate law, litigation, regulatory compliance, and debt recovery. Represented leading banks and NBFCs in DRT, SARFAESI, IBC and civil cases.",
+      title: "Advocate",
+      specialty: "Criminal Defence, Civil & Commercial Litigation, DRT, Consumer and Corporate Disputes",
+      bio: "Mr. Pilla Neelakanta Chakravarthy is an advocate with significant courtroom experience before District Courts and High Courts across Andhra Pradesh. His core practice focuses on criminal defence, including serious offences, statutory prosecutions, constitutional matters, corporate fraud, financial irregularities, POCSO matters, narcotics and enforcement law cases. He also handles select civil, commercial, consumer and arbitration disputes, and contributes regularly to pro bono legal work and systemic legal reform.",
       image: "/images/pnc.jpg",
       core: [
-        "DRT & Banking Litigation",
-        "SARFAESI & RDDBFI Act",
-        "IBC/CIRP/Corporate Insolvency",
-        "Consumer & Civil courts",
-        "Legal drafting and opinion",
+        "Criminal cases including POCSO, NDPS and enforcement-law prosecutions",
+        "Civil and commercial litigation before trial and appellate courts",
+        "Family law and consumer commission representation",
+        "DRT tribunal and banking recovery matters",
+        "ACB, CBI and white-collar investigations",
+        "Corporate disputes, arbitration and legal strategy advisory",
+        "Pro bono matters and legal reform initiatives",
       ],
     },
   ];
@@ -117,7 +126,15 @@ export default function AboutPage() {
                   <p className="text-yellow-600 font-semibold">{member.title}</p>
                 </div>
                 <p className="text-sm text-gray-600 mb-3 font-semibold">Specialty: {member.specialty}</p>
-                <p className="text-gray-700">{member.bio}</p>
+                <p className="text-gray-700 mb-4">{member.bio}</p>
+                <ul className="space-y-2">
+                  {member.core.map((item) => (
+                    <li key={item} className="text-gray-700 flex items-start">
+                      <span className="text-yellow-600 mr-3">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
