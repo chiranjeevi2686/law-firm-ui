@@ -10,15 +10,15 @@ export default function Home() {
       <Testimonials />
 
       {/* CTA Section */}
-      <section className="bg-blue-900 text-white py-20">
+      <section className="bg-gray-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Legal Help?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-100">
             Schedule a free consultation with one of our experienced attorneys today.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition"
+            className="inline-block bg-yellow-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-yellow-700 transition"
           >
             Schedule Your Consultation
           </Link>

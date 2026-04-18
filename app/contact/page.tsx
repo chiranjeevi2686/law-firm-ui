@@ -11,10 +11,10 @@ export default function ContactPage() {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-gray-100">
             Get in touch for a free consultation with our experienced attorneys
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
                 <p className="text-gray-600">
-                  <a href={`tel:${siteConfig.firm.phone.replace(/\D/g, '')}`} className="hover:text-blue-900">
+                  <a href={`tel:${siteConfig.firm.phone.replace(/\D/g, '')}`} className="hover:text-yellow-600">
                     {siteConfig.firm.phone}
                   </a>
                 </p>
@@ -42,7 +42,7 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-600">
-                  <a href={`mailto:${siteConfig.firm.email}`} className="hover:text-blue-900">
+                  <a href={`mailto:${siteConfig.firm.email}`} className="hover:text-yellow-600">
                     {siteConfig.firm.email}
                   </a>
                 </p>

@@ -14,6 +14,7 @@ export default function AboutPage() {
       title: "Advocate / Legal Officer",
       specialty: "Corporate, Banking, DRT, Consumer, Civil & Criminal Litigation",
       bio: "4+ years of experience in corporate law, litigation, regulatory compliance, and debt recovery. Represented leading banks and NBFCs in DRT, SARFAESI, IBC and civil cases.",
+      image: "/images/pnc.jpg",
       core: [
         "DRT & Banking Litigation",
         "SARFAESI & RDDBFI Act",
@@ -27,10 +28,10 @@ export default function AboutPage() {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold mb-4">About {siteConfig.firm.name}</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-gray-100">
             A Legacy of Excellence in Legal Representation
           </p>
         </div>
@@ -78,19 +79,19 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Core Values</h2>
               <ul className="space-y-4">
                 <li className="flex gap-3">
-                  <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
+                  <span className="text-yellow-600 text-2xl flex-shrink-0">✓</span>
                   <span className="text-gray-700"><strong>Integrity</strong> - We uphold the highest ethical standards</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
+                  <span className="text-yellow-600 text-2xl flex-shrink-0">✓</span>
                   <span className="text-gray-700"><strong>Excellence</strong> - We deliver superior legal work</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
+                  <span className="text-yellow-600 text-2xl flex-shrink-0">✓</span>
                   <span className="text-gray-700"><strong>Dedication</strong> - We are committed to your success</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
+                  <span className="text-yellow-600 text-2xl flex-shrink-0">✓</span>
                   <span className="text-gray-700"><strong>Accessibility</strong> - We communicate clearly and promptly</span>
                 </li>
               </ul>
@@ -106,8 +107,15 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member) => (
               <div key={member.name} className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{member.title}</p>
+                <div className="text-center mb-6">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-yellow-600"
+                  />
+                  <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
+                  <p className="text-yellow-600 font-semibold">{member.title}</p>
+                </div>
                 <p className="text-sm text-gray-600 mb-3 font-semibold">Specialty: {member.specialty}</p>
                 <p className="text-gray-700">{member.bio}</p>
               </div>
@@ -173,15 +181,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-900 text-white py-20">
+      <section className="bg-gray-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Work With Us?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-100">
             Contact us today to discuss how we can help with your legal needs.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition"
+            className="inline-block bg-white text-gray-800 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
           >
             Schedule a Free Consultation
           </Link>

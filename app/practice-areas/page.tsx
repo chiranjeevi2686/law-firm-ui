@@ -11,10 +11,10 @@ export default function PracticeAreasPage() {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Practice Areas</h1>
-          <p className="text-xl text-blue-100">
+          <h1 className="text-5xl font-bold mb-4">Practice Areas</h1>
+          <p className="text-xl text-gray-100">
             Comprehensive legal expertise across multiple disciplines
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function PracticeAreasPage() {
               >
                 <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition h-full">
                   <div className="text-6xl mb-4 group-hover:scale-110 transition">{area.icon}</div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-900 transition">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-yellow-600 transition">
                     {area.title}
                   </h3>
                   <p className="text-gray-600 mb-6">{area.description}</p>
@@ -42,14 +42,14 @@ export default function PracticeAreasPage() {
                     <ul className="space-y-2">
                       {area.services.map((service) => (
                         <li key={service} className="text-gray-700 flex items-start">
-                          <span className="text-blue-600 mr-3">✓</span>
+                          <span className="text-yellow-600 mr-3">✓</span>
                           {service}
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <span className="text-blue-600 font-medium group-hover:text-blue-900 transition inline-block">
+                  <span className="text-yellow-600 font-medium group-hover:text-yellow-700 transition inline-block">
                     Learn More →
                   </span>
                 </div>
@@ -60,15 +60,15 @@ export default function PracticeAreasPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-900 text-white py-20">
+      <section className="bg-gray-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Need Legal Help?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-gray-100">
             Contact us for a free consultation with one of our experienced attorneys.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition"
+            className="inline-block bg-yellow-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-yellow-700 transition"
           >
             Contact Us Today
           </Link>

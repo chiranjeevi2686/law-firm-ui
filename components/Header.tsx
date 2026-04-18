@@ -12,7 +12,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href="/" className="font-bold text-2xl text-blue-900">
+        <Link href="/" className="font-bold text-2xl text-gray-800">
           {siteConfig.firm.name}
         </Link>
         
@@ -21,14 +21,14 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-gray-700 hover:text-blue-900 font-medium transition"
+              className="text-gray-700 hover:text-yellow-600 font-medium transition"
             >
               {item.label}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-medium"
+            className="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition font-medium"
           >
             Get Consultation
           </Link>
@@ -37,7 +37,7 @@ export function Header() {
         {/* Mobile menu button */}
         <button
           onClick={toggleMobileMenu}
-          className="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded p-1"
+          className="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 rounded p-1"
           aria-label="Toggle navigation"
           aria-expanded={mobileMenuOpen}
         >
@@ -55,7 +55,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="block text-gray-700 hover:text-blue-900 font-medium transition"
+              className="block text-gray-700 hover:text-yellow-600 font-medium transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}

@@ -48,11 +48,11 @@ export default async function PracticeAreaPage({ params }: Props) {
       <div className="bg-gray-100 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-gray-600">
-            <Link href="/" className="hover:text-blue-900">
+            <Link href="/" className="hover:text-yellow-600">
               Home
             </Link>
             {" / "}
-            <Link href="/practice-areas" className="hover:text-blue-900">
+            <Link href="/practice-areas" className="hover:text-yellow-600">
               Practice Areas
             </Link>
             {" / "}
@@ -62,13 +62,13 @@ export default async function PracticeAreaPage({ params }: Props) {
       </div>
 
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-6">
             <div className="text-6xl">{area.icon}</div>
             <div>
               <h1 className="text-5xl font-bold mb-4">{area.title}</h1>
-              <p className="text-xl text-blue-100">{area.description}</p>
+              <p className="text-xl text-gray-100">{area.description}</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default async function PracticeAreaPage({ params }: Props) {
                 <div className="grid md:grid-cols-2 gap-6">
                   {area.services.map((service) => (
                     <div key={service} className="flex gap-4">
-                      <div className="text-blue-600 text-2xl flex-shrink-0">✓</div>
+                      <div className="text-yellow-600 text-2xl flex-shrink-0">✓</div>
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">{service}</h4>
                         <p className="text-gray-600">
@@ -106,23 +106,23 @@ export default async function PracticeAreaPage({ params }: Props) {
               </div>
 
               {/* Why Choose Us */}
-              <div className="bg-blue-50 p-8 rounded-lg">
+              <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold mb-6 text-gray-900">Why Choose Us for {area.title}?</h3>
                 <ul className="space-y-4">
                   <li className="flex gap-4">
-                    <span className="text-blue-600 font-bold flex-shrink-0">1.</span>
+                    <span className="text-yellow-600 font-bold flex-shrink-0">1.</span>
                     <span className="text-gray-700">Experienced attorneys with years of specialized practice</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="text-blue-600 font-bold flex-shrink-0">2.</span>
+                    <span className="text-yellow-600 font-bold flex-shrink-0">2.</span>
                     <span className="text-gray-700">Proven track record of successful outcomes</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="text-blue-600 font-bold flex-shrink-0">3.</span>
+                    <span className="text-yellow-600 font-bold flex-shrink-0">3.</span>
                     <span className="text-gray-700">Personalized attention to your unique situation</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="text-blue-600 font-bold flex-shrink-0">4.</span>
+                    <span className="text-yellow-600 font-bold flex-shrink-0">4.</span>
                     <span className="text-gray-700">Transparent communication and fair billing</span>
                   </li>
                 </ul>
@@ -158,7 +158,7 @@ export default async function PracticeAreaPage({ params }: Props) {
                   className="group bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
                 >
                   <div className="text-5xl mb-3 group-hover:scale-110 transition">{relatedArea.icon}</div>
-                  <h4 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-900 transition">
+                  <h4 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-yellow-600 transition">
                     {relatedArea.title}
                   </h4>
                   <p className="text-gray-600 text-sm">{relatedArea.description}</p>
