@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components";
+import { DisclaimerModal } from "@/components/DisclaimerModal";
 import { siteConfig } from "@/data/siteConfig";
 
 const geistSans = Geist({
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   title: siteConfig.seo.defaultTitle,
   description: siteConfig.seo.defaultDescription,
   keywords: [
-    "Pilla Neelakanta Chakravarthy",
+    "Pilla Neelakanta chakravarthi",
     "Andhra Pradesh advocate",
     "criminal lawyer Andhra Pradesh",
     "corporate litigation lawyer Andhra Pradesh",
@@ -66,6 +67,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white">
+        <DisclaimerModal />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

@@ -36,8 +36,17 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center text-sm">
+        <div className="border-t border-gray-700 pt-8 text-center text-sm space-y-2">
           <p>&copy; {new Date().getFullYear()} {siteConfig.firm.name}. All rights reserved.</p>
+          <div className="flex items-center justify-center gap-4">
+            <a href="/privacy-policy" className="hover:text-white transition underline">
+              Privacy Policy
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="/disclaimer" className="hover:text-white transition underline">
+              Disclaimer
+            </a>
+          </div>
         </div>
       </div>
     </footer>

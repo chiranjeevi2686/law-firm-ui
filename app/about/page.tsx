@@ -5,9 +5,9 @@ import { TeamMemberCard } from "@/components/TeamMemberCard";
 
 export const metadata: Metadata = {
   title: "About Us | PNC Law Associates",
-  description: "Learn about PNC Law Associates, led by Advocate Pilla Neelakanta Chakravarthy, serving Andhra Pradesh in criminal, civil and corporate litigation",
+  description: "Learn about PNC Law Associates, led by Advocate Pilla Neelakanta chakravarthi, serving Andhra Pradesh in criminal, civil and corporate litigation",
   keywords: [
-    "Pilla Neelakanta Chakravarthy",
+    "Pilla Neelakanta chakravarthi",
     "Advocate in Andhra Pradesh",
     "criminal lawyer Andhra Pradesh",
     "corporate litigation lawyer Andhra Pradesh",
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const team = [
     {
-      name: "Pilla Neelakanta Chakravarthy",
+      name: "Pilla Neelakanta chakravarthi",
       title: "Advocate",
       specialty: "Criminal Defence, Civil & Commercial Litigation, DRT, Consumer and Corporate Disputes",
-      bio: "Mr. Pilla Neelakanta Chakravarthy is an advocate with significant courtroom experience before District Courts and High Courts across Andhra Pradesh. His core practice focuses on criminal defence, including serious offences, statutory prosecutions, constitutional matters, corporate fraud, financial irregularities, POCSO matters, narcotics and enforcement law cases. He also handles select civil, commercial, consumer and arbitration disputes, and contributes regularly to pro bono legal work and systemic legal reform.",
+      bio: "Mr. Pilla Neelakanta chakravarthi is an advocate with significant courtroom experience before District Courts and High Courts across Andhra Pradesh. His core practice focuses on criminal defence, including serious offences, statutory prosecutions, constitutional matters, corporate fraud, financial irregularities, POCSO matters, narcotics and enforcement law cases. He also handles select civil, commercial, consumer and arbitration disputes, and contributes regularly to pro bono legal work and systemic legal reform.",
       image: "/images/pnc.jpg",
       core: [
         "Criminal cases including POCSO, NDPS and enforcement-law prosecutions",
@@ -54,7 +54,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               {siteConfig.firm.name} was formed to deliver focused legal support to financial institutions,
-              corporations, and individuals. Led by Advocate Pilla Neelakanta Chakravarthy, our practice blends
+              corporations, and individuals. Led by Advocate Pilla Neelakanta chakravarthi, our practice blends
               strategic litigation, regulatory compliance, and practical transaction advisory across corporate,
               banking, insolvency, and civil practice areas.
             </p>
