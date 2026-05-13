@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "PNC Law Associates",
-  description: "Legal services by Advocate Pilla Neelakanta chakravarthi in Andhra Pradesh",
+  description: "Legal services by Advocate Pilla Neelakanta Chakravarthi in Andhra Pradesh",
   url: "https://pnc-law-associates.example",
   ogImage: "https://pnc-law-associates.example/og-image.png",
   
@@ -16,9 +16,10 @@ export const siteConfig = {
   // Firm info
   firm: {
     name: "PNC LAW ASSOCIATES",
-    tagline: "Advocate Pilla Neelakanta chakravarthi — Criminal, Corporate, DRT & Civil Litigation",
+    tagline: "Advocate Pilla Neelakanta Chakravarthi — Criminal, Corporate, DRT & Civil Litigation",
     phone: "+91 73820 41516",
     email: "pillaneelakantachakravarthy@gmail.com",
+    linkedin: "https://www.linkedin.com/in/pilla-neelakanta-chakravarthy",
     address: "D.No: 39-11-62, Murali Nagar, Sector -11, Birla Junction, Visakhapatnam, Andhra Pradesh, India.\nPin code: 530007",
   },
 
@@ -32,6 +33,6 @@ export const siteConfig = {
   seo: {
     titleTemplate: "%s | PNC Law Associates",
     defaultTitle: "PNC Law Associates - Criminal & Corporate Litigation in Andhra Pradesh",
-    defaultDescription: "PNC Law Associates, led by Advocate Pilla Neelakanta chakravarthi, provides criminal defence, corporate litigation, DRT tribunal representation, and civil-commercial legal services across Andhra Pradesh.",
+    defaultDescription: "PNC Law Associates, led by Advocate Pilla Neelakanta Chakravarthi, provides criminal defence, corporate litigation, DRT tribunal representation, and civil-commercial legal services across Andhra Pradesh.",
   },
 };

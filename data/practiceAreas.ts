@@ -58,7 +58,7 @@ export const practiceAreas: PracticeArea[] = [
       "Corporate fraud and financial irregularity offences",
       "ACB and CBI investigation-linked proceedings",
     ],
-    details: "Led by Advocate Pilla Neelakanta chakravarthi, this practice addresses serious offences, constitutional criminal issues and white-collar disputes. We build defence strategy from FIR stage through trial and appellate stages while maintaining rights-protective, evidence-driven advocacy.",
+    details: "Led by Advocate Pilla Neelakanta Chakravarthi, this practice addresses serious offences, constitutional criminal issues and white-collar disputes. We build defence strategy from FIR stage through trial and appellate stages while maintaining rights-protective, evidence-driven advocacy.",
   },
   {
     slug: "consumer-commercial-law",

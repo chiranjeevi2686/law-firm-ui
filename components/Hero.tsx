@@ -9,7 +9,7 @@ export function Hero() {
             Expert Legal Solutions
           </h1>
           <p className="text-xl sm:text-2xl mb-3 text-gray-100 max-w-3xl mx-auto leading-relaxed">
-            <span className="block">Advocate Pilla Neelakanta chakravarthi</span>
+            <span className="block">Advocate Pilla Neelakanta Chakravarthi</span>
             <span className="block">PNC Law Associates</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

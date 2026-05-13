@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: siteConfig.seo.defaultTitle,
   description: siteConfig.seo.defaultDescription,
   keywords: [
-    "Pilla Neelakanta chakravarthi",
+    "Pilla Neelakanta Chakravarthi",
     "Andhra Pradesh advocate",
     "criminal lawyer Andhra Pradesh",
     "corporate litigation lawyer Andhra Pradesh",

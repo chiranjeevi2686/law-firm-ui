@@ -9,6 +9,7 @@ interface TeamMember {
   bio: string;
   image: string;
   core: string[];
+  linkedin?: string;
 }
 
 interface TeamMemberCardProps {
