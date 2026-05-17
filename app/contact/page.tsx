@@ -64,9 +64,12 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Business Hours</h3>
                 <p className="text-gray-600">
-                  Monday – Friday: 9:00 AM – 6:00 PM<br />
-                  Saturday: 10:00 AM – 4:00 PM<br />
-                  Sunday: Closed
+                  Monday – Friday: 7:30 AM – 9:30 AM, 6:30 PM – 9:30 PM<br />
+                  Saturday: 9:00 AM – 1:30 PM<br />
+                  Sunday: Holiday
+                </p>
+                <p className="text-sm text-amber-700 mt-3 font-medium">
+                  For any emergency services, a prior appointment is required.
                 </p>
               </div>
 
