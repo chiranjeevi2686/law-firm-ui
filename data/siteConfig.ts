@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "PNC Law Associates",
   description: "Legal services by Advocate Pilla Neelakanta Chakravarthi in Andhra Pradesh",
-  url: "https://pnc-law-associates.example",
-  ogImage: "https://pnc-law-associates.example/og-image.png",
+  url: "https://pncjustice.com",
+  ogImage: "https://pncjustice.com/og-image.png",
   
   // Navigation
   nav: [

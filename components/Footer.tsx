@@ -54,6 +54,7 @@ export function Footer() {
 
         <div className="border-t border-gray-700 pt-8 text-center text-sm space-y-2">
           <p>&copy; {new Date().getFullYear()} {siteConfig.firm.name}. All rights reserved.</p>
+          <p className="text-gray-400">PNC Justice is the online brand of PNC Law Associates.</p>
           <div className="flex items-center justify-center gap-4">
             <a href="/privacy-policy" className="hover:text-white transition underline">
               Privacy Policy
