@@ -18,7 +18,7 @@ export const siteConfig = {
     name: "PNC LAW ASSOCIATES",
     tagline: "Advocate Pilla Neelakanta Chakravarthi — Criminal, Corporate, DRT & Civil Litigation",
     phone: "+91 73820 41516",
-    email: "pillaneelakantachakravarthy@gmail.com",
+    email: "contact@pncjustice.com",
     linkedin: "https://www.linkedin.com/in/pilla-neelakanta-chakravarthi-pnclawfirm/",
     address: "D.No: 39-11-62, Murali Nagar, Sector -11, Birla Junction, Visakhapatnam, Andhra Pradesh, India.\nPin code: 530007",
   },
