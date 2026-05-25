@@ -5,11 +5,18 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Maintenance mode redirect - ACTIVE
+# Redirect old Netlify subdomain to primary custom domain
 [[redirects]]
-  from = "/*"
-  to = "/maintenance.html"
-  status = 503
+  from = "https://pnclawassociates.netlify.app/*"
+  to = "https://pncjustice.com/:splat"
+  status = 301
+  force = true
+
+# Maintenance mode redirect - DISABLED
+# [[redirects]]
+#   from = "/*"
+#   to = "/maintenance.html"
+#   status = 503
 
 # Practice areas redirect - DISABLED during maintenance
 # [[redirects]]

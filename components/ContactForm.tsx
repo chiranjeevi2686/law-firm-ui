@@ -4,22 +4,54 @@ import { useState, FormEvent } from "react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form will be handled by Netlify automatically
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.set("form-name", "contact");
+
+    const encodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      encodedData.append(key, String(value));
+    });
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: encodedData.toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      setSubmitError(false);
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch {
+      setSubmitted(false);
+      setSubmitError(true);
+      setTimeout(() => setSubmitError(false), 5000);
+    }
   };
 
   return (
     <form
       name="contact"
       method="POST"
+      data-netlify="true"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="space-y-6"
     >
+      <input type="hidden" name="form-name" value="contact" />
       {/* Honeypot field for spam protection */}
       <input type="hidden" name="bot-field" />
 
@@ -104,6 +136,12 @@ export function ContactForm() {
       {submitted && (
         <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
           Thank you! We'll get back to you soon.
+        </div>
+      )}
+
+      {submitError && (
+        <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+          We could not send your message right now. Please call or email us directly.
         </div>
       )}
     </form>
