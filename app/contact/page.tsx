@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const whatsappUrl = `https://wa.me/${siteConfig.firm.whatsappNumber}?text=${encodeURIComponent(siteConfig.firm.whatsappMessage)}`;
+
   return (
     <div>
       {/* Page Header */}
@@ -40,6 +42,22 @@ export default function ContactPage() {
                 <p className="text-gray-600">
                   <a href={`tel:${siteConfig.firm.phone.replace(/\D/g, '')}`} className="hover:text-yellow-600">
                     {siteConfig.firm.phone}
+                  </a>
+                </p>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="mb-8">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">WhatsApp</h3>
+                <p className="text-gray-600">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2 text-white font-semibold hover:bg-green-600 transition"
+                  >
+                    <span>💬</span>
+                    Chat on WhatsApp
                   </a>
                 </p>
               </div>
